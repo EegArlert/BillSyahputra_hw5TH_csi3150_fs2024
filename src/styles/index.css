@@ -37,11 +37,12 @@ body main {
     box-sizing: border-box;
 }
 
+/* ---------------------------------------------------------------- */
 
+/* filter content styling start */
 body main .filter-wrapper{
     border: var(--border-placeholder-3);
     flex: 0 1 20%;
-
 }
 
 
@@ -51,17 +52,39 @@ body main .filter-wrapper form{
     display: flex;
     gap: 1rem;
     flex-direction: column;
+    overflow-y: scroll;
 }
 
+body main .filter-wrapper form .filter-container {
+    text-align: center;
+}
+
+body main .filter-wrapper form .filter-container .dropdown {
+    
+}
+
+body main .filter-wrapper form .filter-container .dropdown#active {
+    
+}
+
+/* filter content styling end */
+
+/* -------------------------------------------------------------------- */
+
+/* card content styling start */
 body main .parent-content-card-wrapper {
     border: var(--border-placeholder-4);
     flex-grow: 1;
 }
 
+/* card content styling end */
+
+/* -------------------------------------------------------------------- */
 
 body footer {
     border: var(--border-placeholder-5);
     height: 10%;
     width: 100%;
     box-sizing: border-box;
+    text-align: center;
 }
