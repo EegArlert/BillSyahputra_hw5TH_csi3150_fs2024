@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used Car Website</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./database/usedCars.js" defer></script>
+    <!-- Link your main logic file -->
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <!-- start header -->
+    <header>
+        <h1>Bill's Used Car Listing</h1>
+    </header>
+    <!-- end header -->
+
+    <!-- start main -->
+    <main>
+        <!-- left side of main start (filter content)-->
+        <div class="filter-wrapper">
+            <form>
+                <!-- year range -->
+                <div class="filter-container year">
+                    <h3>YEAR</h3>
+                    <div class="drop-down">
+                        <label for="year-input-min" class="form-label">Min</label>
+                        <input type="number" id="year-input-min" min="2014" max="2020">
+                        <label for="year-input-max" class="form-label">Max</label>
+                        <input type="number" id="year-input-max" min="2014" max="2020">
+                    </div>
+                </div>
+                <!-- brand choices -->
+                <div class="filter-container make">
+                    <h3>MAKE</h3>
+                    <div class="brand-choice-container drop-down">
+                        <ul>
+                            <!-- Generate list and input through JS -->
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- mileage range -->
+                <div class="filter-container mileage">
+                    <h3>MILEAGE</h3>
+                    <div class="drop-down">
+                        <label for="mileage-input-min" class="form-label">Min</label>
+                        <input type="number" id="mileage-input-min" min="10000" max="100000">
+                        <label for="mileage-input-max" class="form-label">Max</label>
+                        <input type="number" id="mileage-input-max" min="10000" max="100000">
+                    </div>
+                </div>
+
+
+                <!-- price range -->
+                <div class="filter-container price">
+                    <h3>PRICE</h3>
+                    <div class="drop-down">
+                        <label for="price-input" class="form-label">Min</label>
+                        <input type="number" id="price-input" min="10000" max="80000">
+                        <label for="price-input" class="form-label">Max</label>
+                        <input type="number" id="price-input" min="10000" max="80000">
+                    </div>
+                </div>
+
+
+                <!-- color choices -->
+                <div class="filter-container color">
+                    <h3>COLOR</h3>
+                    <div class="drop-down">
+                        <ul>
+                            <!-- Generate list and input through JS -->
+                        </ul>
+                    </div>
+                    <button type="submit"> APPLY FILTER </button>
+            </form>
+        </div>
+        <!-- left side of main end -->
+
+        <!-- right side of main start (card content) -->
+        <div class="parent-content-card-wrapper">
+            <!-- fill in the content using JS -->
+        </div>
+        <!-- right side of main end (card content) -->
+    </main>
+    <!-- end main -->
+
+    <!-- start footer -->
+    <footer>
+
+    </footer>
+    <!-- end footer -->
+
+</body>
+
+</html>
