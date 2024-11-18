@@ -7,7 +7,7 @@ const usedCars = [
     price: 18000,
     color: "Silver",
     gasMileage: "25 mpg city, 35 mpg highway",
-    imagePath: "./assets/pictures/silver2018ToyotaCamry.webp",
+    imagePath: "../assets/pictures/silver2018ToyotaCamry.webp",
   },
   {
     year: 2016,
@@ -17,7 +17,7 @@ const usedCars = [
     price: 14000,
     color: "White",
     gasMileage: "30 mpg city, 40 mpg highway",
-    imagePath: "./assets/pictures/white2016HondaCivic.webp",
+    imagePath: "../assets/pictures/white2016HondaCivic.webp",
   },
   {
     year: 2017,
@@ -27,7 +27,7 @@ const usedCars = [
     price: 16000,
     color: "Black",
     gasMileage: "28 mpg city, 38 mpg highway",
-    imagePath: "./assets/pictures/black2017FordFusion.webp",
+    imagePath: "../assets/pictures/black2017FordFusion.webp",
   },
   {
     year: 2019,
@@ -37,7 +37,7 @@ const usedCars = [
     price: 17000,
     color: "Blue",
     gasMileage: "27 mpg city, 36 mpg highway",
-    imagePath: "./assets/pictures/blue2019NissanAltima.webp",
+    imagePath: "../assets/pictures/blue2019NissanAltima.webp",
   },
   {
     year: 2015,
@@ -47,7 +47,7 @@ const usedCars = [
     price: 12000,
     color: "Red",
     gasMileage: "25 mpg city, 37 mpg highway",
-    imagePath: "./assets/pictures/red2015ChevroletMalibu.webp",
+    imagePath: "../assets/pictures/red2015ChevroletMalibu.webp",
   },
   {
     year: 2016,
@@ -57,7 +57,7 @@ const usedCars = [
     price: 15000,
     color: "Gray",
     gasMileage: "29 mpg city, 40 mpg highway",
-    imagePath: "./assets/pictures/gray2016VolkswagenPassat.webp",
+    imagePath: "../assets/pictures/gray2016VolkswagenPassat.webp",
   },
   {
     year: 2020,
@@ -67,7 +67,7 @@ const usedCars = [
     price: 16000,
     color: "Silver",
     gasMileage: "30 mpg city, 41 mpg highway",
-    imagePath: "./assets/pictures/silver2020HyundaiElantra.webp",
+    imagePath: "../assets/pictures/silver2020HyundaiElantra.webp",
   },
   {
     year: 2014,
@@ -77,7 +77,7 @@ const usedCars = [
     price: 14000,
     color: "Green",
     gasMileage: "22 mpg city, 30 mpg highway",
-    imagePath: "./assets/pictures/green2014SubaruOutback.webp",
+    imagePath: "../assets/pictures/green2014SubaruOutback.webp",
   },
   {
     year: 2017,
@@ -87,7 +87,7 @@ const usedCars = [
     price: 19000,
     color: "Blue",
     gasMileage: "24 mpg city, 31 mpg highway",
-    imagePath: "./assets/pictures/blue2017MazdaCX5.webp",
+    imagePath: "../assets/pictures/blue2017MazdaCX5.webp",
   },
   {
     year: 2018,
@@ -97,7 +97,7 @@ const usedCars = [
     price: 17000,
     color: "White",
     gasMileage: "22 mpg city, 29 mpg highway",
-    imagePath: "./assets/pictures/white2018KiaSorento.webp",
+    imagePath: "../assets/pictures/white2018KiaSorento.webp",
   },
   {
     year: 2015,
@@ -107,7 +107,7 @@ const usedCars = [
     price: 24000,
     color: "Black",
     gasMileage: "19 mpg city, 30 mpg highway",
-    imagePath: "./assets/pictures/black2015DodgeChallenger.webp",
+    imagePath: "../assets/pictures/black2015DodgeChallenger.webp",
   },
   {
     year: 2017,
@@ -117,7 +117,7 @@ const usedCars = [
     price: 32000,
     color: "Red",
     gasMileage: "19 mpg city, 27 mpg highway",
-    imagePath: "./assets/pictures/red2017CadillacXT5.webp",
+    imagePath: "../assets/pictures/red2017CadillacXT5.webp",
   },
   {
     year: 2018,
@@ -127,7 +127,7 @@ const usedCars = [
     price: 38000,
     color: "Blue",
     gasMileage: "18 mpg city, 23 mpg highway",
-    imagePath: "./assets/pictures/blue2018JaguarFPACE.webp",
+    imagePath: "../assets/pictures/blue2018JaguarFPACE.webp",
   },
   {
     year: 2019,
@@ -137,7 +137,7 @@ const usedCars = [
     price: 55000,
     color: "Black",
     gasMileage: "Electric (370 miles per charge)",
-    imagePath: "./assets/pictures/black2019TeslaModelS.webp",
+    imagePath: "../assets/pictures/black2019TeslaModelS.webp",
   },
   {
     year: 2020,
@@ -147,7 +147,7 @@ const usedCars = [
     price: 68000,
     color: "White",
     gasMileage: "20 mpg city, 26 mpg highway",
-    imagePath: "./assets/pictures/white2020PorscheCayenne.webp",
+    imagePath: "../assets/pictures/white2020PorscheCayenne.webp",
   },
   {
     year: 2017,
@@ -157,7 +157,7 @@ const usedCars = [
     price: 26000,
     color: "White",
     gasMileage: "21 mpg city, 30 mpg highway",
-    imagePath: "./assets/pictures/white2017LexusES.webp",
+    imagePath: "../assets/pictures/white2017LexusES.webp",
   },
   {
     year: 2016,
@@ -167,6 +167,6 @@ const usedCars = [
     price: 27000,
     color: "Black",
     gasMileage: "23 mpg city, 34 mpg highway",
-    imagePath: "./assets/pictures/black2016BMW5Series.webp",
+    imagePath: "../assets/pictures/black2016BMW5Series.webp",
   },
 ];

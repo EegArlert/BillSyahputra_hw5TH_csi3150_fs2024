@@ -6,12 +6,15 @@
     --border-placeholder-5: solid 1px rgb(113, 40, 52);
 }
 
+ul {
+    list-style: none;
+}
+
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 98vw;
-    height: 95vh;
+    height: 100vh;
 }
 
 body header {
@@ -22,49 +25,154 @@ body header {
     box-sizing: border-box;
 }
 
-body header h1{
-
-}
-
-
 body main {
     border: var(--border-placeholder-2);
     width: 100%;
     height: 80%;
     display: flex;
-    padding: 2rem;
-    gap: 1.5rem;
+    padding: 0 1.2rem;
+    gap: 1rem;
     box-sizing: border-box;
 }
 
 /* ---------------------------------------------------------------- */
 
 /* filter content styling start */
-body main .filter-wrapper{
+body main .filter-wrapper {
     border: var(--border-placeholder-3);
     flex: 0 1 20%;
 }
 
 
-body main .filter-wrapper form{
+body main .filter-wrapper form {
     border: var(--border-placeholder-1);
     height: 100%;
     display: flex;
     gap: 1rem;
     flex-direction: column;
+    align-items: center;
     overflow-y: scroll;
 }
 
 body main .filter-wrapper form .filter-container {
+    width: 100%;
     text-align: center;
+    margin-bottom: 10px;
 }
 
-body main .filter-wrapper form .filter-container .dropdown {
-    
+body main .filter-wrapper form .filter-container h3 {
+    padding-bottom: 0.5rem;
+    background-color: #f1f1f1;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    margin: 0;
 }
 
-body main .filter-wrapper form .filter-container .dropdown#active {
-    
+body main .filter-wrapper form .filter-container .drop-down {
+    display: none;
+    justify-content: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+
+body main .filter-wrapper form .filter-container .drop-down.active {
+    display: grid;
+    justify-content: center;
+}
+
+/* filter year, mileage, price styling start */
+body main .filter-wrapper form .filter-container.year .drop-down,
+body main .filter-wrapper form .filter-container.price .drop-down,
+body main .filter-wrapper form .filter-container.mileage .drop-down {
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 30px 30px;
+    column-gap: 15px;
+    padding: 10px;
+
+}
+
+body main .filter-wrapper form .filter-container.year .drop-down .form-label.min,
+body main .filter-wrapper form .filter-container.price .drop-down .form-label.min,
+body main .filter-wrapper form .filter-container.mileage .drop-down .form-label.min {
+    grid-area: 1 / 1;
+}
+
+body main .filter-wrapper form .filter-container.year .drop-down .form-label.max,
+body main .filter-wrapper form .filter-container.price .drop-down .form-label.max,
+body main .filter-wrapper form .filter-container.mileage .drop-down .form-label.max {
+    grid-area: 1 / 2;
+}
+
+body main .filter-wrapper form .filter-container.year .drop-down input,
+body main .filter-wrapper form .filter-container.price .drop-down input,
+body main .filter-wrapper form .filter-container.mileage .drop-down input {
+    padding: 0 10px;
+}
+
+/* filter year, mileage, price styling start */
+
+/*filter make styling start  */
+
+body main .filter-wrapper form .filter-container.make .drop-down .filter-list-make ul {
+    display: block;
+    height: 100px;
+
+}
+
+body main .filter-wrapper form .filter-container.make .drop-down .filter-list-make li {
+    display: grid;
+    grid-template-columns: 100px 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: start;
+    margin-bottom: 5px;
+
+}
+
+body main .filter-wrapper form .filter-container.make .drop-down .filter-list-make li input {
+    justify-self: start;
+}
+
+/*filter make styling start  */
+
+/* filter color styling start */
+
+body main .filter-wrapper form .filter-container.color .drop-down .filter-list-color ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
+
+body main .filter-wrapper form .filter-container.color .drop-down .filter-list-color li {
+    display: grid;
+    grid-template-columns: 60px 50px 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+body main .filter-wrapper form .filter-container.color .drop-down .filter-list-color li input {
+    justify-self: start;
+}
+
+body main .filter-wrapper form .filter-container.color .drop-down .filter-list-color li div {
+    width: 20px;
+    height: 20px;
+    border: solid 0.5px #000000;
+    border-radius: 50%;
+}
+
+/* filter color styling end */
+
+body main .filter-wrapper form button {
+    width: 200px;
+    min-height: 50px;
+    margin-bottom: 20px;
 }
 
 /* filter content styling end */
@@ -74,7 +182,34 @@ body main .filter-wrapper form .filter-container .dropdown#active {
 /* card content styling start */
 body main .parent-content-card-wrapper {
     border: var(--border-placeholder-4);
-    flex-grow: 1;
+    flex: 1 0 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    overflow-y: scroll;
+}
+
+body main .parent-content-card-wrapper .card-wrapper {
+    width: 25rem;
+    height: 35rem;
+    border: solid 1px rgb(95, 95, 95);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+body main .parent-content-card-wrapper .card-wrapper .image {
+    width: 100%;
+    height: 60%;
+}
+
+body main .parent-content-card-wrapper .card-wrapper .info-container {
+    padding: 0 1.5rem;
+}
+
+body main .parent-content-card-wrapper .card-wrapper .info-container h5 {
+    font-size: 1.5rem;
 }
 
 /* card content styling end */
