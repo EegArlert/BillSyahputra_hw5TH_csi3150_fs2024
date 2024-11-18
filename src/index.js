@@ -44,7 +44,7 @@ function createCard(year, make, model, mileage, price, color, gasMileage, imageP
     cardInfoHeading.innerText = `${year} ${make} ${model}`;
 
     const cardInfoSubHeading = document.createElement('h6');
-    cardInfoSubHeading.innerHTML = `${color} ${mileage} <br /> ${gasMileage}`;
+    cardInfoSubHeading.innerHTML = `${color} &nbsp; ${mileage} mil <br /> ${gasMileage}`;
 
     const cardInfoPrice = document.createElement('h3');
     //source of this function is from MDN Intl.NumberFormat();
