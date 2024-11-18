@@ -152,9 +152,18 @@ const submitButton = document.querySelector('form button');
 
 submitButton.addEventListener("click", (e) => {
     e.preventDefault();
+    const form = document.querySelector('form');
+
+    if (form.checkValidity()) {
+        console.log("The form is valid!");
+    } else {
+        // Show validation errors
+        console.log("The form is invalid!");
+        form.reportValidity();
+    }
 
     //storing all numerical inputs
-    const yearMin = parseInt(document.getElementById('year-input-min').value) || 0;
+    const yearMin = parseInt(document.getElementById('year-input-min').value);
     const yearMax = parseInt(document.getElementById('year-input-max').value) || Infinity;
     const mileageMin = parseInt(document.getElementById('mileage-input-min').value) || 0;
     const mileageMax = parseInt(document.getElementById('mileage-input-max').value) || Infinity;
@@ -191,24 +200,24 @@ submitButton.addEventListener("click", (e) => {
 function displayFilteredCars(filteredCars) {
     const resultContainer = document.querySelector('.parent-content-card-wrapper');
     resultContainer.innerHTML = ''; // Clear previous results
-  
+
     if (filteredCars.length === 0) {
-      resultContainer.innerHTML = '<p>No cars found matching the filters.</p>';
-      return;
+        resultContainer.innerHTML = '<p>No cars found matching the filters.</p>';
+        return;
     }
-  
+
     filteredCars.forEach((car) => {
-      const card = createCard(
-        car.year,
-        car.make,
-        car.model,
-        car.mileage,
-        car.price,
-        car.color,
-        car.gasMileage,
-        car.imagePath
-      );
-      appendChildToParent(card, resultContainer);
+        const card = createCard(
+            car.year,
+            car.make,
+            car.model,
+            car.mileage,
+            car.price,
+            car.color,
+            car.gasMileage,
+            car.imagePath
+        );
+        appendChildToParent(card, resultContainer);
     });
 }
 
