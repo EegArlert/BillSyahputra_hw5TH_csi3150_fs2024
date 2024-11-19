@@ -163,12 +163,12 @@ submitButton.addEventListener("click", (e) => {
     }
 
     //storing all numerical inputs
-    const yearMin = parseInt(document.getElementById('year-input-min').value);
+    const yearMin = parseInt(document.getElementById('year-input-min').value) || 0;
     const yearMax = parseInt(document.getElementById('year-input-max').value) || Infinity;
     const mileageMin = parseInt(document.getElementById('mileage-input-min').value) || 0;
     const mileageMax = parseInt(document.getElementById('mileage-input-max').value) || Infinity;
-    const priceMin = parseInt(document.getElementById('price-input').value) || 0;
-    const priceMax = parseInt(document.getElementById('price-input').value) || Infinity;
+    const priceMin = parseInt(document.getElementById('price-input-min').value) || 0;
+    const priceMax = parseInt(document.getElementById('price-input-max').value) || Infinity;
 
     //storing selected makes
     const selectedMakes = Array.from(document.querySelectorAll('.filter-list-make .input-make:checked')).map(
